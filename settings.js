@@ -1,0 +1,13 @@
+global.Qoted = "ftoko"
+
+
+
+
+
+
+
+
+
+
+
+
