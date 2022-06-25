@@ -1,0 +1,21 @@
+{ pkgs }: {
+    deps = [
+        pkgs.nodejs-16_x
+	    	pkgs.nodePackages.typescript-language-server
+    		pkgs.nodePackages.node-pre-gyp
+    		pkgs.libpng
+	    	pkgs.libjpeg
+        pkgs.libuuid
+        pkgs.python
+        pkgs.ffmpeg
+        pkgs.imagemagick  
+        pkgs.wget
+        pkgs.git
+        
+      
+    ];
+    env ={
+    LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [pkgs.libuuid];
+  };
+}
+}
